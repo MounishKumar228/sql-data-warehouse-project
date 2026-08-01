@@ -60,6 +60,61 @@ The project is implemented in the following phases:
 
 ---
 
+## 📁 Project Structure
+
+```text
+DataWarehouse
+│
+├── Source Files
+│   ├── CRM
+│   │   ├── cust_info.csv
+│   │   ├── prd_info.csv
+│   │   └── sales_details.csv
+│   │
+│   └── ERP
+│       ├── CUST_AZ12.csv
+│       ├── LOC_A101.csv
+│       └── PX_CAT_G1V2.csv
+│
+├── Bronze Layer
+│   ├── DDL
+│   ├── Stored Procedures
+│   └── Tables
+│
+├── Silver Layer
+│   ├── DDL
+│   ├── Stored Procedures
+│   └── Tables
+│
+├── Gold Layer
+│   ├── DDL
+│   ├── Stored Procedures
+│   ├── Fact Tables
+│   └── Dimension Tables
+│
+├── Power BI Reports
+│
+├── Documentation
+│   ├── Project Requirements
+│   ├── Data Architecture
+│   ├── Naming Conventions
+│   └── Notion Workspace
+│
+└── README.md
+```
+
+### Structure Overview
+
+- **Source Files** – Raw CRM and ERP datasets used as input.
+- **Bronze Layer** – Raw data ingested without business transformations.
+- **Silver Layer** – Cleaned, validated, and standardized datasets.
+- **Gold Layer** – Business-ready fact and dimension tables optimized for reporting and analytics.
+- **Power BI Reports** – Interactive dashboards and business insights.
+- **Documentation** – Project planning, architecture, naming conventions, and project tracking.
+- **README.md** – Project overview, workflow, technologies, and implementation details.
+
+---
+
 ## 🛠️ Technologies Used
 
 - MySQL
@@ -131,7 +186,7 @@ Surrogate keys follow the naming convention:
 
 ### Technical (Data Warehouse) Columns
 
-Technical metadata columns are prefixed with:
+Technical metadata columns use the prefix:
 
 ```text
 dwh_<column_name>
@@ -186,4 +241,4 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 
 ---
 
-⭐ If you found this project useful, consider giving it a **Star** on GitHub!
+⭐ **If you find this project useful, consider giving it a Star on GitHub!**
